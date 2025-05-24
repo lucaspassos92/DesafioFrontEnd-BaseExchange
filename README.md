@@ -40,12 +40,30 @@ Este projeto é um sistema de gerenciamento de ordens desenvolvido em **React** 
 
 🧠 **Lógica de Match de Ordens**
 A função matchOrders (em utils/orderUtils.ts) simula o comportamento de um motor de matching:
-  Busca ordens opostas (compra vs. venda) com mesmo instrumento
-  Ordena por melhor preço e mais antiga
-  Reduz a quantidade restante das ordens envolvidas
-  Atualiza o status para PARCIAL ou EXECUTADA
-  Adiciona entrada ao histórico de cada ordem modificada
+  Busca ordens opostas (compra vs. venda) com mesmo instrumento;
 
+  Ordena por melhor preço e mais antiga;
+
+  Reduz a quantidade restante das ordens envolvidas;
+
+  Atualiza o status para PARCIAL ou EXECUTADA;
+
+  Adiciona entrada ao histórico de cada ordem modificada;
+
+✅ Testes Automatizados
+Este projeto utiliza Vitest e @testing-library/react para garantir a qualidade das principais funcionalidades.
+
+🔍 Testes Criados
+1. matchOrders – Lógica de Execução de Ordens
+Local: src/utils/__testes__/matchOrders.test.ts
+
+Testa as principais regras de correspondência de ordens:
+
+✅ Executa completamente se preços e quantidades forem iguais.
+
+✅ Executa parcialmente se a nova ordem tem quantidade maior que a contraparte.
+
+✅ Não executa se o preço não for compatível.
 _______________________________________________
 
 Desenvolvido por:
