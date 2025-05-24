@@ -34,9 +34,19 @@ Este projeto é um sistema de gerenciamento de ordens desenvolvido em **React** 
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
-   cd nome-do-repo
+   git clone https://github.com/lucaspassos92/DesafioFrontEnd-BaseExchange.git
+   
+   cd DesafioFrontEnd-BaseExchange
 
+🧠 **Lógica de Match de Ordens**
+A função matchOrders (em utils/orderUtils.ts) simula o comportamento de um motor de matching:
+  Busca ordens opostas (compra vs. venda) com mesmo instrumento
+  Ordena por melhor preço e mais antiga
+  Reduz a quantidade restante das ordens envolvidas
+  Atualiza o status para PARCIAL ou EXECUTADA
+  Adiciona entrada ao histórico de cada ordem modificada
+
+_______________________________________________
 
 Desenvolvido por:
 👨‍💻 Lucas Passos de Oliveira
